@@ -43,6 +43,25 @@
 
 						<!-- Work -->
 							<article id="work">
+								<h2 class="major">Pretoria Apartment Rental Market</h2>
+								<a href="https://github.com/AMoganedi/apartment-analysis-project/tree/main/apartmant_project" >
+								<span class="image main"><img src="images/apartment.jpg" alt=""/></span>
+								</a>
+								<p>A friend of mine asked me this question the other day: "If I had to build an apartment from scratch, what would the bedroom-to-bathroom-to-parking-space ratio look like in order to maximise monthly prices?" I was intrigued by the question so much so I decided to turn it into a project. This project.</p>
+								<p><strong>Business Question</strong></p>
+								<p>Which property feature; bedrooms, bathrooms or parking spaces; has the strongest individual influence on monthly rental price in the Gauteng apartment market?</p>
+								<p><Strong>Tools and Methods</Strong></p>
+								<p>The data was collected by creating a web scraper in Python for Property24 listings across some areas in Pretoria. The dataset was cleaned and explored in MySQL where descriptive statistics (mean, median, standard deviation and interquartile range) were computed to understand the distribution of rental prices. The individual effect of each feature on the price was measured using simple linear regression and Pearson’s correlation and the combined effect was measured using multiple linear regression in Python.</p>
+								<p><strong>Findings</strong></p>
+								<p>Bathrooms were the strongest individual predictor of the monthly rental price, with each additional bathroom adding R2 786.51 to the monthly price, which was more than double the impact of a bedroom, which added R1 351.93 for each additional bedroom. Bathrooms are responsible for 69% of the reason why prices vary across listings, while bedrooms are responsible for 49%.</p>
+								<p>But the most important finding was that the multiple regression model indicated that all three features combined explain only 9.6% of the variation in price. This is a good indication that location and property quality are the main drivers of prices for the Gauteng rental market, with room counts being a secondary factor.</p>
+								<p><strong>Project Limitations</strong></p>
+								<p>This analysis is a comparison of only the features available in the dataset, that is, bedrooms, bathrooms and parking spaces. The remaining 90.4% of price variation points to influences beyond this scope, such as suburb location, building quality and proximity to amenities. These are natural directions for further investigation.</p>
+								
+								<p><a href="https://github.com/AMoganedi/apartment-analysis-project/tree/main/apartmant_project">Click here for the full project.</p></a>
+							</article>
+
+							<article id="work">
 								<h2 class="major">Loan Approval Bias Assessment</h2>
 								<a href="https://public.tableau.com/app/profile/aron.moganedi/viz/LoanApprovalBiasAssessment/Approvalratedistributiondashboardincomeannum/" >
 								<span class="image main"><img src="images/port1.jpg" alt=""/></span>
@@ -57,7 +76,7 @@
 								</ul>
 								</p>
 								<p>The difference in percentage points between corresponding groups is not large or significant enough to indicate meaningful bias. The analysis concluded that loan approval outcomes are determined primarily by creditworthiness, with education and employment status playing no significant role.</p>
-								<p><a href="https://github.com/Daindia/Loan-approval-analysis-project">Click here</a> for the full project.</p>
+								<p><a href="https://github.com/AMoganedi/Loan-approval-analysis-project">Click here for the full project.</p></a>
 							</article>
 
 						<!-- About -->
@@ -261,7 +280,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 										<li><span class="button primary disabled">Disabled</span></li>
 										<li><span class="button disabled">Disabled</span></li>
 									</ul>
+
+									<ul class="actions">
+    									<li><a href="#loan" class="button">Next Project →</a></li>
+									</ul>
 								</section>
+
 
 								<section>
 									<h3 class="major">Form</h3>
