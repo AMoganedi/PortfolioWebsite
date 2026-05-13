@@ -62,20 +62,22 @@
 							</article>
 
 							<article id="work">
-								<h2 class="major">Loan Approval Bias Assessment</h2>
+								<h2 class="major">Loan Approval Bias Assessment: Education & Employment Status</h2>
 								<a href="https://public.tableau.com/app/profile/aron.moganedi/viz/LoanApprovalBiasAssessment/Approvalratedistributiondashboardincomeannum/" >
 								<span class="image main"><img src="images/port1.jpg" alt=""/></span>
 								</a>
-								<p>This project analyzed a loan approval dataset to evaluate if there's potential bias in loan approvals based on the self-employment and education status. I performed exploratory data analysis in MySQL to calculate approval rates while controlling for CIBIL score and income in order to prevent false evidence of bias.</p>
-								<p>Key Findings:
-								<ul style="list-style-type: disc;">
-									<li>Graduates: 62.45% approval rate</li>
-									<li>Non-graduates: 61.98% approval rate</li>
-									<li>Self-employed: 62.23% approval rate</li>
-									<li>Non-self-employed: 62.20% approval rate</li>
-								</ul>
-								</p>
-								<p>The difference in percentage points between corresponding groups is not large or significant enough to indicate meaningful bias. The analysis concluded that loan approval outcomes are determined primarily by creditworthiness, with education and employment status playing no significant role.</p>
+								<p><strong>Introduction</strong></p>
+								<p>The phenomenon of bias in banks has genuine effects for ordinary people. The objective of this project aimed to provide an answer to a fundamental yet crucial question: are loan approvals in this dataset influenced by an applicant's self-employment or degree, or are choices solely based on creditworthiness?</p>
+								<p><strong>The business question</strong></p>
+								<p>Does education status or employment type meaningfully influence loan approval outcomes, or are approvals determined primarily by financial creditworthiness?</p>
+								<p><strong>Tools and methods</strong></p>
+								<p>MySQL was used to study the dataset and compute acceptance rates across four categories of applicants: graduates, non-graduates, self-employed, and non-self-employed. Crucially, prior to rendering any conclusions, the research adjusted for CIBIL score and income to be certain that any observed differences in approval rates were due to bias as opposed to the inherent relationship between financial status, work, and education.</p>
+								<p><strong>Why controlling for CIBIL score matters</strong></p>
+								<p>Graduates typically have higher incomes and stronger credit scores, which are factors that legitimately influence approval decisions. By adjusting for these variables first, the analysis isolates education and employment status as independent factors, providing a fairer and more honest picture. A naive comparison might show graduates getting approved more frequently than non-graduates and incorrectly conclude bias exists. Nonetheless, graduates typically earn more money and have better credit scores, both of which have a real impact on acceptance choices. The approach separates education and work status as independent factors by first adjusting for these variables, providing a more equitable and truthful image.</p>
+								<p><strong>Key findings</strong></p>
+								<p>The approval rates were astonishingly consistent for each of the four categories:</p>
+								<p>There was only a 0.47 percentage point difference between the approval rates of graduates (62.45%) and non-graduates (61.98%). The approval rate for self-employed applicants was 62.23%, compared to 62.20% for non-self-employed applicants—a mere 0.03 percentage points.</p>
+								<p>The data unambiguously indicates that loan acceptance outcomes in this dataset are based on creditworthiness rather than whether an applicant has a degree or owns their own business. Differences this tiny are not statistically significant. The data plainly shows that creditworthiness, rather than an applicant's degree or business ownership determines loan acceptance results in this dataset.</p>
 								<p><a href="https://github.com/AMoganedi/Loan-approval-analysis-project">Click here for the full project.</p></a>
 							</article>
 
