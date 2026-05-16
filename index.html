@@ -43,22 +43,39 @@
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Pretoria Apartment Rental Market</h2>
-								<a href="https://github.com/AMoganedi/apartment-analysis-project/tree/main/apartmant_project" >
+								<h2 class="major">Gauteng Apartment Rental Market: A Feature-Based Price Variation Analysis</h2>
+								<a href="https://github.com/AMoganedi/apartment-analysis-project-extended" >
 								<span class="image main"><img src="images/apartment.jpg" alt=""/></span>
 								</a>
-								<p>A friend of mine asked me this question the other day: "If I had to build an apartment from scratch, what would the bedroom-to-bathroom-to-parking-space ratio look like in order to maximise monthly prices?" I was intrigued by the question so much so I decided to turn it into a project. This project.</p>
+								<p><strong>Introduction</strong></p>
+								<p>This project focuses on apartment price variation across four cities in
+									Gauteng: Pretoria, Sandton, Johannesburg, and Midrand. We explore
+									attributes such as the location of apartments; the number of bedrooms,
+									bathrooms and parking spaces each apartment has; the floor size of the
+									apartment; and the estate agent each apartment complex belongs to. The
+									aim is to understand how each feature influences price differences across apartments.</p>
 								<p><strong>Business Question</strong></p>
-								<p>Which property feature; bedrooms, bathrooms or parking spaces; has the strongest individual influence on monthly rental price in the Gauteng apartment market?</p>
+								<p>Does location and estate agent influence apartment rental prices across
+									Gauteng? And to what extent do internal apartment features, number of
+									bedrooms, bathrooms, parking spaces and floor size, collectively and
+									individually account for monthly rental price variation?</p>
 								<p><Strong>Tools and Methods</Strong></p>
-								<p>The data was collected by creating a web scraper in Python for Property24 listings across some areas in Pretoria. The dataset was cleaned and explored in MySQL where descriptive statistics (mean, median, standard deviation and interquartile range) were computed to understand the distribution of rental prices. The individual effect of each feature on the price was measured using simple linear regression and Pearson’s correlation and the combined effect was measured using multiple linear regression in Python.</p>
+								<p>The data was collected by creating a web scraper in Python for Property24 listings across four major cities in Gauteng. The dataset was cleaned and explored in MySQL where descriptive statistics (mean, median, standard deviation and interquartile range) were computed to understand the distribution of rental prices. The individual effect of each feature on the price was measured using simple linear regression, Pearson’s correlation, Kruskal-Wallis test and the posthoc Dunn's test, while the combined effect of all features was measured using multiple linear regression in Python.</p>
 								<p><strong>Findings</strong></p>
-								<p>Bathrooms were the strongest individual predictor of the monthly rental price, with each additional bathroom adding R2 786.51 to the monthly price, which was more than double the impact of a bedroom, which added R1 351.93 for each additional bedroom. Bathrooms are responsible for 69% of the reason why prices vary across listings, while bedrooms are responsible for 49%.</p>
-								<p>But the most important finding was that the multiple regression model indicated that all three features combined explain only 9.6% of the variation in price. This is a good indication that location and property quality are the main drivers of prices for the Gauteng rental market, with room counts being a secondary factor.</p>
+								<ul>
+									<li>Combined, all six observed attributes in this dataset account for about 59.8% of monthly price variation across apartment listings. Unobserved features, such as amenities, apartment furnishings, and extras, could account for the remaining 40.2%.</li>
+									<li>There is a very inconsistent relationship (0.23) between bedrooms and monthly price. This indicates that bedrooms only account for about 5.29% of price variation between listings. When price responds to bedrooms, it usually drives up by R3 481.47.</li>
+									<li>There is a moderately consistent relationship (0.48) between bathrooms and monthly price. This indicates that bathrooms account for about 23% of price variation between listings. When price does respond to bathrooms, it usually drives up by R8 211.95 in this dataset.</li>
+									<li>There is very low correlation (0.22) between parking spaces and monthly prices, which indicates that the number of parking spaces only accounts for around 4.84% of price variation between listings. Each additional parking space drives prices up by R408.71.</li>
+									<li>There is a fragile correlation (0.13) between the floor size and monthly prices, which indicates that the floor size only accounts for around 1.69% of price variation between listings. When price does respond to floor size, it usually drives up by R53.52.</li>
+									<li>After running the Kruskal-Wallis Test on the cities in the database, we can conclude that location influences price variation across apartment listings. Furthermore, Sandton tends to have higher-priced apartments than the other three cities (Midrand, Pretoria and Johannesburg). The points are similar for estate agents.</li>
+								</ul>
 								<p><strong>Project Limitations</strong></p>
-								<p>This analysis is a comparison of only the features available in the dataset, that is, bedrooms, bathrooms and parking spaces. The remaining 90.4% of price variation points to influences beyond this scope, such as suburb location, building quality and proximity to amenities. These are natural directions for further investigation.</p>
+								<p>We couldn't include more cities in Gauteng because of their naturally low sample size that could introduce sample bias.</p>
+								<p><strong>Conclusion</strong></p>
+								<p>Monthly rental prices are typically shaped by intrinsic property features like bedroom count, bathroom availability, and floor size. So, it was particularly revealing to see not only how strongly these factors influence price variation, but also in what specific ways they do so. Beyond these physical attributes, we found strong evidence that price also depends meaningfully on location, confirming that apartments in cities like Sandton tend to command higher rents than comparable ones in Pretoria. Additionally, we observed systematic differences between estate agents, suggesting that agent-specific factors may also play a role in price setting.</p>
 								
-								<p><a href="https://github.com/AMoganedi/apartment-analysis-project/tree/main/apartmant_project">Click here for the full project.</p></a>
+								<p><a href="https://github.com/AMoganedi/apartment-analysis-project-extended">Click here for the full project.</p></a>
 							</article>
 
 							<article id="work">
